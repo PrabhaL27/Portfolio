@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRABHA L — AI/ML Engineering Student</title>
+<meta name="description" content="Portfolio of Prabha L, Final Year B.E. CSE (AI & ML) student — projects, skills, internships, and experience.">
+
+<!-- Fonts: Newsreader (display serif), IBM Plex Sans (body), IBM Plex Mono (data/labels) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+<style>
+:root{--bg:#f6f3ed;--ink:#17201b;--muted:#68716b;--line:#d8d2c7;--accent:#285943;--card:#fbfaf7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",Arial,sans-serif;line-height:1.65}
+.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.site-header{position:sticky;top:0;z-index:10;background:rgba(246,243,237,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.header-inner{min-height:72px;display:flex;align-items:center;gap:26px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:600}.brand-mark{font-family:"IBM Plex Mono",monospace;color:var(--accent)}.brand-name{font-family:Newsreader,serif;font-size:23px}
+.site-nav{display:flex;gap:18px;margin-left:auto}.site-nav a,.hero-links a,.project-links a,.footer-links a{color:var(--ink);text-decoration:none}.site-nav a{font:500 12px "IBM Plex Mono",monospace}.site-nav a:hover,.hero-links a:hover,.project-links a:hover{color:var(--accent)}
+.resume-btn,.btn{display:inline-block;text-decoration:none;border:1px solid var(--ink);padding:9px 15px;color:var(--ink);font-size:13px}.resume-btn{font-family:"IBM Plex Mono",monospace}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;padding-top:100px;padding-bottom:100px;align-items:center}.eyebrow,.section-label,.fact-label{font:500 12px "IBM Plex Mono",monospace;color:var(--accent);text-transform:uppercase;letter-spacing:.08em}
+h1,h2,h3{margin-top:0}h1{font:500 clamp(54px,8vw,92px)/.92 Newsreader,serif;letter-spacing:-.04em;margin:18px 0 28px}.hero-role{font-style:italic;color:var(--accent)}.hero-sub{font-size:18px;max-width:650px;color:#4e5751}.hero-cta{display:flex;gap:12px;margin:28px 0}.btn-primary{background:var(--ink);color:white}.btn-ghost{background:transparent}.hero-links{display:flex;gap:20px;list-style:none;padding:0;margin:0;font:500 13px "IBM Plex Mono",monospace}
+.focus-card{background:var(--card);border:1px solid var(--line);padding:22px;box-shadow:10px 10px 0 rgba(40,89,67,.08)}.focus-card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;font:12px "IBM Plex Mono",monospace;color:var(--muted)}.focus-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block}.pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}.pill{display:inline-block;padding:6px 10px;border:1px solid var(--line);background:rgba(40,89,67,.04);font:500 11px "IBM Plex Mono",monospace;color:var(--accent)}.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}.stat{padding:12px 10px;border:1px solid var(--line);background:#fff}.stat-label{display:block;font:11px "IBM Plex Mono",monospace;color:var(--muted);margin-bottom:6px}.stat-value{display:block;font:500 26px/1 Newsreader,serif;letter-spacing:-.04em}.feature-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}.feature-list li{display:flex;align-items:center;gap:10px;font:12px "IBM Plex Mono",monospace;color:var(--muted)}.feature-list li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block}
+.section{padding:90px 0;border-top:1px solid var(--line)}.section-grid{display:grid;grid-template-columns:280px 1fr;gap:50px}.section-title{font:500 48px/1 Newsreader,serif;letter-spacing:-.03em}.section-body{font-size:17px;max-width:750px}.about-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;border-top:1px solid var(--line);margin-top:35px;padding-top:20px}.fact-label,.fact-value{display:block}.fact-label{color:var(--muted);margin-bottom:5px}.fact-value{font-size:14px}
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:35px}.skill-block{border-top:1px solid var(--line);padding:20px 0}.skill-block h3{font:500 13px "IBM Plex Mono",monospace;margin-bottom:14px}.key{color:var(--accent)}.tag-array{font:14px "IBM Plex Mono",monospace;line-height:2.3}.tag{display:inline-block;border:1px solid var(--line);padding:1px 7px;margin:2px;background:var(--card);font-size:12px}.comma{color:var(--muted)}
+.project-list{display:grid;gap:0;margin-top:35px}.project-card{border-top:1px solid var(--line);padding:28px 0}.project-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.project-head h3{font:500 28px Newsreader,serif;margin:0}.project-links{display:flex;gap:14px;font:12px "IBM Plex Mono",monospace;white-space:nowrap}.project-abstract{max-width:820px;color:#4e5751}.project-tags{display:flex;flex-wrap:wrap;gap:6px}
+.timeline{list-style:none;padding:0;margin:35px 0 0}.timeline li{display:grid;grid-template-columns:180px 1fr;gap:30px;border-top:1px solid var(--line);padding:24px 0}.timeline-date{font:12px "IBM Plex Mono",monospace;color:var(--muted)}.timeline-body h3{font:500 22px Newsreader,serif;margin-bottom:6px}.timeline-org{color:var(--accent)}.timeline-body p{margin:0;color:#4e5751}
+.contact-sub{max-width:650px;color:#4e5751}.contact-form{max-width:650px;margin-top:30px}.form-row{display:grid;gap:7px;margin-bottom:17px}.form-row label{font:12px "IBM Plex Mono",monospace;color:var(--muted)}input,textarea{font:inherit;border:1px solid var(--line);background:var(--card);padding:12px;outline:none}input:focus,textarea:focus{border-color:var(--accent)}.form-note{font-size:12px;color:var(--muted)}
+.site-footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font:12px "IBM Plex Mono",monospace}.footer-inner{display:flex;justify-content:space-between;gap:20px}.footer-links{display:flex;gap:15px}
+@media(max-width:800px){.site-nav{display:none}.hero{grid-template-columns:1fr;padding-top:65px}.section-grid{grid-template-columns:1fr;gap:10px}.about-facts,.skills-grid{grid-template-columns:1fr}.timeline li{grid-template-columns:1fr;gap:5px}.project-head{display:block}.project-links{margin-top:10px}.footer-inner{display:block}.footer-links{margin-top:12px}.viz-card canvas{width:100%;height:auto}}
+</style>
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">[PL]</span>
+      <span class="brand-name">Prabha L</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#experience">experience</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <a class="resume-btn" href="assets/Prabha resume1.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="eyebrow">current focus</p>
+      <h1>Prabha L<br><span class="hero-role">builds practical applications.</span></h1>
+      <p class="hero-sub">
+        Final-year AI/ML Engineering student focused on computer vision and efficient
+        model deployment. I like taking a model from a messy notebook to something
+        that actually ships — and writing clearly about how it works along the way.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+      <ul class="hero-links">
+        <li><a href="https://github.com/PrabhaL27" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+        
+      </ul>
+      <p style="margin-top:16px;font:12px 'IBM Plex Mono',monospace;color:#68716b">Prabha.l@mce.edu.in &nbsp;·&nbsp; +91 9363211044 &nbsp;·&nbsp; Chennai, India</p>
+    </div>
+
+    <div class="hero-viz">
+      <div class="focus-card">
+        <div class="focus-card-head">
+          <span>focus snapshot</span>
+          <span class="focus-dot"></span>
+        </div>
+
+        <div class="pill-row">
+          <span class="pill">AI/ML</span>
+          <span class="pill">Python</span>
+          <span class="pill">Web</span>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat">
+            <span class="stat-label">projects</span>
+            <span class="stat-value">06</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">internships</span>
+            <span class="stat-value">03</span>
+          </div>
+          
+        </div>
+
+        <ul class="feature-list">
+          <li>Computer vision &amp; predictive modeling</li>
+          <li>ML deployment &amp; backend workflows</li>
+          <li>Clean, practical product thinking</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section wrap">
+    <p class="section-label"># about</p>
+    <div class="section-grid">
+      <h2 class="section-title">About</h2>
+      <div class="section-body">
+        <p>
+  I'm a final-year AI & ML student. I like understanding how things work and then
+  trying to build them myself. That's what got me interested in AI/ML and software
+  development.
+</p>
+
+<p>
+  I enjoy working with Python, experimenting with machine learning, building web
+  applications, and exploring different technologies through projects. I'm
+  especially interested in the space where AI meets real-world software.
+</p>
+
+<p>
+  For me, every project is an opportunity to learn something new, make mistakes,
+  and improve the way I build.
+</p>
+        <div class="about-facts">
+          <div>
+            <span class="fact-label">Studying</span>
+            <span class="fact-value">B.E. CSE (AI &amp; ML)</span>
+          </div>
+          <div>
+            <span class="fact-label">Based in</span>
+            <span class="fact-value">Chennai, India</span>
+          </div>
+          <div>
+            <span class="fact-label">Currently</span>
+            <span class="fact-value">Exploring AI/ML, backend, and web development</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section wrap">
+    <p class="section-label"># skills</p>
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-block">
+        <h3><span class="key">"frontend"</span>:</h3>
+        <div class="tag-array">[
+          <span class="tag">HTML5</span><span class="comma">,</span>
+          <span class="tag">CSS3</span><span class="comma">,</span>
+          <span class="tag">JavaScript</span><span class="comma">,</span>
+          <span class="tag">React.js (Learning)</span>
+        ]</div>
+      </div>
+
+      <div class="skill-block">
+        <h3><span class="key">"backend"</span>:</h3>
+        <div class="tag-array">[
+          <span class="tag">Python</span><span class="comma">,</span>
+          <span class="tag">Flask</span><span class="comma">,</span>
+          <span class="tag">REST APIs</span>
+        ]</div>
+      </div>
+
+      <div class="skill-block">
+        <h3><span class="key">"database_and_tools"</span>:</h3>
+        <div class="tag-array">[
+          <span class="tag">SQL</span><span class="comma">,</span>
+          <span class="tag">MySQL</span><span class="comma">,</span>
+          <span class="tag">Git</span><span class="comma">,</span>
+          <span class="tag">GitHub</span><span class="comma">,</span>
+          <span class="tag">Postman</span>
+        ]</div>
+      </div>
+
+      <div class="skill-block">
+        <h3><span class="key">"ai_ml"</span>:</h3>
+        <div class="tag-array">[
+          <span class="tag">scikit-learn</span><span class="comma">,</span>
+          <span class="tag">Data Preprocessing</span><span class="comma">,</span>
+          <span class="tag">Model Training</span><span class="comma">,</span>
+          <span class="tag">Model Evaluation</span>
+        ]</div>
+      </div>
+
+      <div class="skill-block">
+        <h3><span class="key">"cloud_and_devops"</span>:</h3>
+        <div class="tag-array">[
+          <span class="tag">AWS</span><span class="comma">,</span>
+          <span class="tag">Docker</span><span class="comma">,</span>
+          <span class="tag">Kubernetes</span><span class="comma">,</span>
+          <span class="tag">Jenkins</span><span class="comma">,</span>
+          <span class="tag">CI/CD</span>
+        ]</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section wrap">
+    <p class="section-label"># projects</p>
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-list">
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>AI Flood &amp; Waterlogging Early Warning System</h3>
+          <div class="project-links">
+            <a href="https://github.com/PrabhaL27" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+        <p class="project-abstract">
+          <strong>Abstract.</strong> Built an ML-powered Flask web application that predicts
+          flood and waterlogging risk using rainfall, elevation, river-level, and soil-moisture
+          inputs. Connected the trained classification model to a web dashboard for early alerts.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">scikit-learn</span><span class="tag">HTML/CSS</span><span class="tag">REST API</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>Weather Impact Analysis — Crop Monitoring &amp; Pest Management</h3>
+          <div class="project-links">
+            <a href="https://github.com/PrabhaL27" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+        <p class="project-abstract">
+          <strong>Abstract.</strong> Led a team in building a weather-aware crop monitoring
+          and pest-risk analysis system. Developed Python data pipelines to study relationships
+          between weather patterns, crop health, and potential pest outbreaks.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Data Analysis</span><span class="tag">APIs</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>Rock-Fall Prediction &amp; Early Warning System</h3>
+          <div class="project-links">
+            <a href="https://github.com/PrabhaL27" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+        <p class="project-abstract">
+          <strong>Abstract.</strong> Designed a predictive early-warning system using simulated
+          geological sensor data. Combined machine-learning prediction with threshold-based
+          automated alerts to demonstrate a practical safety-monitoring workflow.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">Sensor Data</span><span class="tag">Alerts</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>Personal Portfolio Website</h3>
+          <div class="project-links">
+            <a href="https://github.com/PrabhaL27" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+        <p class="project-abstract">
+          <strong>Abstract.</strong> A responsive personal portfolio built to present my
+          projects, internships, technical skills, and contact information while demonstrating
+          practical frontend development and clean UI structure.
+        </p>
+        <div class="project-tags">
+          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">Responsive UI</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="experience" class="section wrap">
+    <p class="section-label"># experience</p>
+    <h2 class="section-title">Experience &amp; Education</h2>
+
+    <ol class="timeline">
+      <li>
+        <div class="timeline-date">Jul – Aug 2025</div>
+        <div class="timeline-body">
+          <h3>Machine Learning Intern <span class="timeline-org">— SkillCraft Technology</span></h3>
+          <p>Built and evaluated Python machine-learning models for classification tasks using
+             real datasets, including data cleaning, normalization, feature engineering, and evaluation.</p>
+        </div>
+      </li>
+
+      <li>
+        <div class="timeline-date">Jun – Jul 2025</div>
+        <div class="timeline-body">
+          <h3>DevOps &amp; Cloud Intern <span class="timeline-org">— DLK Technologies, Vadapalani</span></h3>
+          <p>Worked with Flask applications, AWS, Docker, Kubernetes, Jenkins, GitHub, and CI/CD
+             workflows for build, test, and deployment automation.</p>
+        </div>
+      </li>
+
+      <li>
+        <div class="timeline-date">2023 — 2027</div>
+        <div class="timeline-body">
+          <h3>B.E. CSE — AI &amp; ML <span class="timeline-org">— Meenakshi College of Engineering</span></h3>
+          <p>Final-year student with a CGPA of 8.49, building practical skills across Python,
+             web development, databases, AI/ML, cloud, and software deployment.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="contact" class="section wrap contact-section">
+    <p class="section-label"># contact</p>
+    <h2 class="section-title">Let's talk</h2>
+    <p class="contact-sub">
+      Open to internships, research collaborations, and interesting problems in general.
+      Fastest way to reach me is email.
+    </p>
+
+    <form class="contact-form" action="mailto:Prabha.l@mce.edu.in" method="post" enctype="text/plain">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send message</button>
+      <p class="form-note">This opens your email client — swap in a form service (e.g. Formspree) for a real inbox flow.</p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© 2026 Prabha L. Built with curiosity, practical learning, and persistence.</span>
+    <span class="footer-links">
+      <a href="https://github.com/PrabhaL27" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:Prabha.l@mce.edu.in">Email</a>
+    </span>
+  </div>
+</footer>
+
+
+<script>
+const canvas=document.getElementById("lossChart");
+if(canvas){
+ const ctx=canvas.getContext("2d"), w=canvas.width, h=canvas.height;
+ let frame=0;
+ function draw(){
+   frame=(frame+1)%241;
+   ctx.clearRect(0,0,w,h);
+   ctx.strokeStyle="#d8d2c7";ctx.lineWidth=1;
+   for(let i=1;i<5;i++){ctx.beginPath();ctx.moveTo(30,i*h/5);ctx.lineTo(w-20,i*h/5);ctx.stroke();}
+   const n=40, progress=Math.min(frame/120,1);
+   ctx.lineWidth=3;ctx.strokeStyle="#285943";
+   ctx.beginPath();
+   for(let i=0;i<n*progress;i++){let x=30+i*(w-55)/(n-1);let y=h-35-(Math.exp(-i/11)*145+8*Math.sin(i*.7));i===0?ctx.moveTo(x,y):ctx.lineTo(x,y)}ctx.stroke();
+   ctx.strokeStyle="#17201b";ctx.lineWidth=2;ctx.beginPath();
+   for(let i=0;i<n*progress;i++){let x=30+i*(w-55)/(n-1);let y=h-35-(55+(i/n)*145+5*Math.sin(i*.5));i===0?ctx.moveTo(x,y):ctx.lineTo(x,y)}ctx.stroke();
+   const epoch=Math.min(40,Math.floor(progress*40));
+   document.getElementById("epoch-readout").textContent=`epoch ${epoch} / 40`;
+   requestAnimationFrame(draw);
+ }
+ draw();
+}
+</script>
+
+</body>
+</html>
